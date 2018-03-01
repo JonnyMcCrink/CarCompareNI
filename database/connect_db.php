@@ -10,7 +10,6 @@ $dbname = "carcompareni";
 //$username = "B00656761";
 //$password = "fMkaNS7Z";
 //$dbname = "b00656761";
-
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
