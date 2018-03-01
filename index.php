@@ -50,7 +50,6 @@ $result = $conn->query($sql);
 							<td width=10% align="center"> <?php echo $row["stock_amount"]; ?> </td>
 						</tr>
 					</tbody>
-
 					<?php
 					}
 					} else{
