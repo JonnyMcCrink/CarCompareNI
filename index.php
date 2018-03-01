@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<?php include 'database/connect_db.php'; 
+<?php include 'database/connect_db.php';
 $sql = "SELECT * FROM dealership";
 $custResult = $conn->query($sql);
 $result = $conn->query($sql);
@@ -12,7 +12,7 @@ $result = $conn->query($sql);
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	</head>
-	
+
 	<body>
 		<div class="container">
 			<div>
@@ -32,32 +32,32 @@ $result = $conn->query($sql);
 						</tr>
 					</thead>
 					<tbody>
-					
+
 					<?php
 					if ($result->num_rows > 0) {
 						while($row = $result->fetch_assoc()) {
-							?>  
+							?>
 						<tr width="100%">
-							<td> <?php echo $row["ID"]; ?> </td>
-							<td> <?php echo $row["DealershipName"]; ?> </td>
-							<td> <?php echo $row["dealership_AddressLine_1"]; ?> </td>
-							<td> <?php echo $row["dealership_AddressLine_2"]; ?> </td>
-							<td> <?php echo $row["dealership_Town_City"]; ?> </td>
-							<td> <?php echo $row["dealership_County"]; ?> </td>
-							<td> <?php echo $row["dealership_Postcode"]; ?> </td>
-							<td> <?php echo $row["dealership_phone"]; ?> </td>
-							<td> <?php echo $row["dealership_email"]; ?> </td>
-							<td> <?php echo $row["stock_amount"]; ?> </td>
+							<td width=10% align="center"> <?php echo $row["ID"]; ?> </td>
+							<td width=10% align="center"> <?php echo $row["DealershipName"]; ?> </td>
+							<td width=10% align="center"> <?php echo $row["dealership_AddressLine_1"]; ?> </td>
+							<td width=10% align="center"> <?php echo $row["dealership_AddressLine_2"]; ?> </td>
+							<td width=10% align="center"> <?php echo $row["dealership_Town_City"]; ?> </td>
+							<td width=10% align="center"> <?php echo $row["dealership_County"]; ?> </td>
+							<td width=10% align="center"> <?php echo $row["dealership_Postcode"]; ?> </td>
+							<td width=10% align="center"> <?php echo $row["dealership_phone"]; ?> </td>
+							<td width=10% align="center"> <?php echo $row["dealership_email"]; ?> </td>
+							<td width=10% align="center"> <?php echo $row["stock_amount"]; ?> </td>
 						</tr>
 					</tbody>
-					
+
 					<?php
 					}
 					} else{
 						echo "0 results";
 					}$conn->close();
-					?> 
-				</table> 
+					?>
+				</table>
 			</div>
 		</div>
 	</body>
