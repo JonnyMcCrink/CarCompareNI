@@ -1,123 +1,56 @@
-<!DOCTYPE html>
+<?php include 'includes/landing-header.php'; ?>
 
-<?php include 'database/connect_db.php';
-$sql = "SELECT * FROM dealership";
-$custResult = $conn->query($sql);
-$result = $conn->query($sql);
-?>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--Linking to the external jQuery Library -->
-		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+<section id="landingPageHead" class="landingBanner" >
+	<div class="container">
+		<div>
+			<div class="text">
+				<h2>CAR COMPARE NI</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="landingPage">
+	<div class="container">
+		<div class="section-title">
+			Welcome to Car Compare NI
+		</div>
 		
-		<!--Linking to an external Font Library -->
-		<script src="https://use.fontawesome.com/ee4234232f.js"></script>
+		<div class="mainLogo">
+			<img src="images/logo.png"></img>
+			<br><br><br>
+		</div>
+		
+		
+		<div class="welcome ">
+			<div class="col-lg-7 col-md-7 col-sm-7">
+				<p style="font-size:22px">ABOUT CAR COMPARE NI<br></p>
+				<p>	You're a successful car dealership but need that professional website to advertise to your customers.
+					But where do you start? How do you build that website? How can you stay ahead of your competition?<br>
+					Car Compare NI is the answer to all of the above! <br><br>
+					We provide you with a complete white-labelled online platform that takes a matter of minutes to set up, 
+					all within a handy to use interface where you'll be able to add your own company branding and upload your stock file with ease!
+					Meaning you'll have a professional website that you can use to advertise to your customers in just a matter of a few clicks!
+				</p><br>
 				
-		<!--Linking to the external CSS Style sheet where the styling of this webpage comes from -->
-		<link href="CSS/CarCompareNI-main.css" rel="stylesheet">
-		
-		<!--Linking to the local jQuery script file where the functionality of this webpage comes from -->
-		<script src="scripts/ccni-script.js"></script>
-	</head>
-	
-	<body>
-		
-		<!--<nav id="home">
-			<div class="navbar">
-				<a class="menu" href="#home">Home</a>
-				<a class="menu" href="#history">VW's History</a>
-				<a class="menu" href="#throughTheYears">Through the Years</a>
-				<a class="menu" href="#gallery">Gallery</a>
-				<a class="menu" href="#Golf_Range">The VW Golf Range</a>
-				<a class="menu" href="#AnimatedGolf">Add Your Reg to a Golf</a>
-				<a class="menu" href="#emailSignUp">Sign Up for Updates</a>			
+			</div>	
+			<div class=" col-lg-5 col-md-5 col-sm-5">
+				<p style="font-size:22px">WHY CHOOSE CAR COMPARE NI?<br></p>
+				<ul>
+					<i class="fa fa-check"></i> Handy to use interface<br>
+					<i class="fa fa-check"></i> Have your website launched in no-time<br>
+					<i class="fa fa-check"></i> Add and edit your company branding <br>
+					<i class="fa fa-check"></i> Easy to maintain / keep up to date<br>
+					<i class="fa fa-check"></i> No coding knowledge needed
+				</ul> 
+				<br>
 			</div>
-		</nav>-->
-
-		<section id="home" class="main_banner" >
-			<div class="container">
-				<div>
-					<div class="text">
-						<h2 class="title">CAR COMPARE NI</h2>
-						<p class="sub-title">
-							UUJ Final Year Project<br>
-							Jonathan McCrink-B00656761<br>
-						</p>	
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="history" class="about" >
-			<div class="container">
-				<div class="section-title">
-					<p>
-						Welcome to Car Compare NI..
-					</p>
-				</div>
-				<div class="history" >
-					Welcome to Car Compare NI...<br>
-				
-					<div align="center">
-						<button class="historyButtons" id="ReadMore">Launch Site <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-					</div>									
-				</div>
-				
-				<div>
-					<table>
-						<thead>
-							<tr>
-								<th>ID</th>
-								<th>Name</th>
-								<th>Address Line 1</th>
-								<th>Address Line 2</th>
-								<th>Town/City</th>
-								<th>County</th>
-								<th>Post Code</th>
-								<th>Phone</th>
-								<th>Email</th>
-								<th>Stock Count</th>
-							</tr>
-						</thead>
-						<tbody>
-
-						<?php
-						if ($result->num_rows > 0) {
-							while($row = $result->fetch_assoc()) {
-								?>
-							<tr width="100%">
-								<td width=10% align="center"> <?php echo $row["ID"]; ?> </td>
-								<td width=10% align="center"> <?php echo $row["DealershipName"]; ?> </td>
-								<td width=10% align="center"> <?php echo $row["dealership_AddressLine_1"]; ?> </td>
-								<td width=10% align="center"> <?php echo $row["dealership_AddressLine_2"]; ?> </td>
-								<td width=10% align="center"> <?php echo $row["dealership_Town_City"]; ?> </td>
-								<td width=10% align="center"> <?php echo $row["dealership_County"]; ?> </td>
-								<td width=10% align="center"> <?php echo $row["dealership_Postcode"]; ?> </td>
-								<td width=10% align="center"> <?php echo $row["dealership_phone"]; ?> </td>
-								<td width=10% align="center"> <?php echo $row["dealership_email"]; ?> </td>
-								<td width=10% align="center"> <?php echo $row["stock_amount"]; ?> </td>
-							</tr>
-						</tbody>
-
-						<?php
-						}
-						} else{
-							echo "0 results";
-						}$conn->close();
-						?>
-					</table>
-				</div>
-			</div>
-		</section>
-		<br>
-		<footer class="footer">
-			<div class="container">
-			&copy; <script>var dteNow = new Date(); var intYear = dteNow.getFullYear(); document.write(intYear); </script>
-			Car Compare NI <br>Designed and developed by <a href="mailto:McCrink-J@ulster.ac.uk">Jonathan McCrink</a>	
-			</div>
-		</footer>	
-	</body>
-</html>
+			<div align="center">
+			You're only a few clicks away from hiring your <br>best salesperson with Car Compare NI! <br><br>
+				<a href="dealershipSignup.php"><button class="historyButtons" id="Signup">Sign Up <i class="fa fa-arrow-circle-right"></i></button></a>
+			</div>	
+		</div>
+	</div>
+</section>
+<br>
+<?php include 'includes/main-footer.php'; ?>
