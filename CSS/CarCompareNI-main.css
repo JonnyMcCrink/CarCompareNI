@@ -1,9 +1,3 @@
-/* 
-	Jonathan McCrink - B00656761 
-	COM554 - Inveractive Web Computing
-	Assignment 1
-*/
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   color:black;
@@ -82,12 +76,12 @@ h6 {
 	position: relative;
 }
 .main_banner .text {
-	color: #000000 ;
+	color: #000000;
 	text-align: center;
 }
 .main_banner .text .title {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #ffffff ;
+	color: #000000;
 	text-transform: uppercase;
 	font-size: 70px;
 	line-height: 85px;
@@ -142,213 +136,8 @@ h6 {
   cursor: pointer;
 }
 
-div.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #2E86C1;
-}
 
-div.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-	padding: 24px 83px;
-	font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-	font-weight: bold;
-	color: white;
-}
-div.tab button:hover {
-    background-color: #399adb;
-}
 
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-	background-color: white;
-    border-top: none;
-}
-.tabcontent p{
-	color:black;
-}
-
-.topright {
-    float: right;
-    cursor: pointer;
-    font-size: 20px;
-	color: black;
-}
-.topright:hover {color: red;}
-
-.tab_img {
-    float: right;
-	padding-top: 60px;
-	padding-right: 10px;
-	padding-left: 20px;
-	height: 110px;
-    width: 120px;
-}
-
-.gallery img{
-	display: none;
-	height: 250px;
-	width: 460px;
-	position:absolute;
-}
-button.accordion {
-    background-color: #2E86C1;
-	font-family: Arial, Helvetica, sans-serif;
-	padding-bottom: 20px;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: 1px solid white;
-    text-align: center;
-    outline: none;
-    font-size: 14px;
-	font-weight: bold;
-	border-radius: 0px 0px 0px 0px;	
-
-}
-button.accordion:hover{
-  background-color: #399adb;
-  color: white;
-  cursor: pointer;
-}
-button.accordion:after {
-    content: '\002B';
-    color: white;
-    float: right;
-    margin-left: 5px;
-}
-button.accordion.active:after {
-    content: "\2212";
-}
-
-div.range {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-	font-size: 15px;
-}
-.accordion_img {
-    float: right;
-}
-.accordion_buttons{
-	background-color: #808080;
-    border: none;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    margin: 8px 5px;
-    cursor: pointer;
-	border-radius: 20px 20px;	
-}
-.accordion_buttons:hover{
-  background-color: #606060;
-  color: white;
-  cursor: pointer;
-}
-
-#S_Features{display:none}
-#GT_Features{display:none}
-#GTD_Features{display:none}
-#GTI_Features{display:none}
-#GTE_Features{display:none}
-#R_Features{display:none}
-
-.about {
-	padding: 10px 0 0;
-}
-.featuresTable{
-    padding-left: 170px;
-	
-}
-
-.featuresTable th{
-    padding-bottom: 5px;
-    text-align: left;
-    background-color: #808080;
-    color: white;
-	
-}
-.featuresTable th, td{
-	border-bottom: 1px solid #ddd;
-	
-}
-.golfReg{
-	position: relative;
-    text-align: center;
-    color: black;
-}
-.golfReg img{
-	height: 480px;
-	width: 920px;
-	padding-left: 165px;
-}
-.inputReg{
-	width: 20%;
-    padding: 12px 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.reg {
-    position: absolute;
-    top: 70%;
-    font-size: 26px;
-    left: 67.5%;
-    font-weight: bold;
-    transform: translate(-50%, -50%);
-}
-
-.emailForm  {
-	margin: 50px auto;
-	width: 60%;
-	padding: 20px;
-	background-color: #e6e6e6;
-	border-radius: 20px;
-	box-shadow: 10px 10px 5px #888888;
-}
-.inputbox{
-	width: 100%;
-    padding: 12px 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.signUp{
-	background-color: #2E86C1;
-    border: none;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 12px;
-    cursor: pointer;
-	border-radius: 90px;	
-}
-.signUp:hover{
-  background-color: #399adb;
-  color: white;
-  cursor: pointer;
-}
-.emailMessage {
-	color: red;
-}
-.footerImage img{
-	height: 342px;
-    width: 1218px;
-    padding-left: 51px;
-}
 
 footer.footer {
 	background-color: #e6e6e6;
