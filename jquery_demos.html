@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>COM554 Assignment 1</title>
+		
+		<!--Linking to the external jQuery Library -->
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+		
+		<!--Linking to an external Font Library -->
+		<script src="https://use.fontawesome.com/ee4234232f.js"></script>
+				
+		<!--Linking to the external CSS Style sheet where the styling of this webpage comes from -->
+		<link href="CSS/CarCompareNI-main.css" rel="stylesheet">
+		
+		<!--Linking to the local jQuery script file where the functionality of this webpage comes from -->
+		<script src="scripts/ccni-script.js"></script>
+	</head>
+	<body>
+		
+		<nav id="home">
+			<div class="navbar">
+				<a class="menu" href="#home">Home</a>
+				<a class="menu" href="#history">VW's History</a>
+				<a class="menu" href="#throughTheYears">Through the Years</a>
+				<a class="menu" href="#gallery">Gallery</a>
+				<a class="menu" href="#Golf_Range">The VW Golf Range</a>
+				<a class="menu" href="#AnimatedGolf">Add Your Reg to a Golf</a>
+				<a class="menu" href="#emailSignUp">Sign Up for Updates</a>			
+			</div>
+		</nav>
+
+		<section id="home" class="main_banner" >
+			<div class="container">
+				<div>
+					<div class="text">
+						<h2 class="title">The History of the <br>VW Golf</h2>
+						<p class="sub-title">
+							COM554-Assignment 1<br>
+							Jonathan McCrink-B00656761<br>
+						</p>	
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="history" class="about" >
+			<div class="container">
+				<div class="section-title">
+					<p>
+						<img src="images/Volkswagen_1.jpg" width="40px" height="38px"> 
+						Volkswagen's History
+					</p>
+				</div>
+				<div class="history" >
+					The history of the “People's Car”, Volkswagen, begins on May 28th 1937 when the “Geselschaft zur Vorbereitung des Deutschen Volkswagen mbH” company is created. 
+					A year later it is renamed into “Volkswagenwerk GmbH” has it's headquarters established in Wolfsburg, a city especially created for the workers on the 
+					Volkswagen plant that are going to mass produce Hitler's dream car for the average German, designed by Ferdinand Porsche.<br>
+					But Hitler's plans weren't going to materialize because WWII started and the plant switched production to armaments and the vehicles under the VW logo went to 
+					the army of the Third Reich. After the war, the plant at Wolfsburg went under Allied control, British to be specific, 
+					and under the supervision of Major Ivan Hirst, Volkswagen began the mass production of the Type 1, or the Beetle as it would come to be known throughout 
+					the world.<br>
+					Initial sales abroad were disastrous, but through clever advertising, the Beetle gained popularity with the young crowd and from 1945 to 1955 numbers reached 
+					the 1 million mark. Meanwhile, sometime at the end of the 40s, Volkswagen also introduced the Type 2, a people carrier, known as the “VW Bully".<br>
+				
+					<div align="center">
+						<button class="historyButtons" id="ReadMore">Read More <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
+					</div><br>
+					
+					<div id="readMoreHistory" style="display:none">
+						Even through the 60s and 70s, the Beetle manages to stay on top of sales, despite the fact that it was becoming obsolete. Reliability, 
+						easy maintenance and reduced fuel consumption made the car remain a consumer favorite. On February 17th 1972, Volkswagen celebrated selling over 
+						15 million units of the Beetle sold, thus surpassing the Ford Model T as the most popular car in the world, a title which it still holds to this day.
+						Despite the success it had with the Beetle, by the beginning of the 70s, Volkswagen AG was in dire need of new models to replace the aging Beetle. 
+						The help came from Audi/Auto Union, which WV had bought back in the sixties. They brought with them the knowledge for front-wheel drive vehicles and 
+						water-cooled engines.<br>
+						In 1974, the first Golf rolls out of the factory's door and becomes and instant hit. Marketed as the Rabbit in the United States and Canada, 
+						it was responsible for putting Volkswagen back on the map. That same year, a more sporty model, the Scirocco makes it's way onto the Volkswagen line up. 
+						For the smaller car market, the German car maker came up with the Polo in 1976, which was quite popular throughout Western Europe.<br>
+						The next decade saw Volkswagen trying to improve their products with new generations of all the older models and expanding their influence by taking 
+						over Spanish manufacturer Seat and the Czech-based Skoda Auto.<br>
+						As the 90s rolled in, VW-owned Audi became a direct competitor for BMW and Mercedes-Benz with products designed for a more pretentious market. 
+						This left a void in the general market which Volkswagen now tried to fill. The third generation vehicles now came with better quality and standards. 
+						Gradually, new luxury models were introduced, like the Touareg, a premium off-road vehicle.<br>
+						In the last decade, Volkswagen has been busy trying to set records when it comes to CO2 emissions and fuel-efficient technologies. 
+						This applies to their normal engines, running on gas and diesel, but they are also developing hybrids.<br><br>
+						<div align="center">
+							<button class="historyButtons" id="ReadLess">Read Less <i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+						</div>
+					</div>										
+				</div>	
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+			&copy; <script>var dteNow = new Date(); var intYear = dteNow.getFullYear(); document.write(intYear+","); </script>
+			<a href="mailto:McCrink-J@ulster.ac.uk">Jonathan McCrink</a>.	
+			</div>
+		</footer>	
+	</body>
+</html>
